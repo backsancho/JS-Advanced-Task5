@@ -1,0 +1,56 @@
+@import '../../../../shared/style/base';
+@import '../../../../shared/style/variable';
+
+
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+tr,
+th,
+td {
+  border-bottom: 1px solid $borderCol;
+  padding: 15px;
+  text-align: start;
+  font-weight: 900;
+}
+tr:hover td {
+  background-color: $headerBg;
+}
+.nameTask {
+  color: $greyCol;
+  font-weight: 200;
+}
+.progress {
+  color: $redCol;
+  font-weight: 400;
+}
+.done {
+  color: $greenCol;
+  font-weight: 400;
+}
+.editBtn,
+.deleteBtn {
+  padding: 10px 15px;
+  border-radius: 5px;
+  font-size: 15px;
+  background-color: $orangeCol;
+  border: 1px solid $orangeDark;
+  &:focus {
+    box-shadow: inset 1px 1px 7px 3px $orangeDark;
+    font-size: 14px;
+  }
+}
+.deleteBtn {
+  background-color: $redCol;
+  border: 1px solid $redDark;
+  color: $whiteCol;
+  &:focus {
+    box-shadow: inset 1px 1px 7px 3px $redDark;
+  }
+ &:disabled{
+    color: $headerBg;
+    font-weight: 200;
+ }
+}

@@ -1,0 +1,80 @@
+@import "../../../shared/style/base";
+@import "../../../shared/style/variable";
+
+section {
+  border-top: 1px solid $headerBg;
+  border-bottom: 1px solid $headerBg;
+}
+.task {
+  width: 1000px;
+  margin: 20px auto;
+  &__top {
+    font-size: 25px;
+    margin: 10px 0;
+  }
+  &__input {
+    width: 80%;
+    height: 40px;
+    margin: 20px 10px 20px 0px;
+    border-radius: 5px;
+    border: 1px solid $borderCol;
+    outline: none;
+    padding: 10px;
+    font-size: 20px;
+    &:focus {
+      border: 2px solid $blueShadow;
+    }
+  }
+  &__addBtn {
+    width: 190px;
+    height: 35px;
+    border: 1px solid $greenDark;
+    background-color: $greenCol;
+
+    box-shadow: 4px 2px 1px 0px $greenDark;
+    border-radius: 5px;
+    color: $whiteCol;
+    font-size: 15px;
+    &:focus {
+      box-shadow: inset 1px 1px 7px 3px $greenDark;
+      box-shadow: -2px -2px 3px 1px $borderCol;
+      font-size: 14px;
+    }
+  }
+  &__change {
+    width: 80%;
+    height: 80px;
+    border-radius: 5px;
+    background-color: $headerBg;
+    display: flex;
+    justify-content: end;
+    padding: 20px;
+    margin-bottom: 30px;
+    &__input {
+      width: 190px;
+      height: 40px;
+      border-radius: 5px;
+      border: 1px solid $borderCol;
+      outline: none;
+      padding: 10px;
+      font-size: 20px;
+      &:focus {
+        border: 2px solid $blueCol;
+        box-shadow: 0 0 8px 0 $blueCol;
+      }
+    }
+    &__btn {
+      padding: 8px 16px;
+      border-radius: 5px;
+      font-size: 15px;
+      background-color: $greenCol;
+      border: 1px solid $greenDark;
+      color: $whiteCol;
+      margin: 0 20px 0 100px;
+      &:focus {
+        box-shadow: inset 1px 1px 7px 3px $greenDark;
+        font-size: 14px;
+      }
+    }
+  }
+}

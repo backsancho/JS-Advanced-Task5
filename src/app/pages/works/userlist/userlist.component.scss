@@ -1,0 +1,88 @@
+@import "../../../shared/style/variable";
+@import '../../../shared/style/base';
+
+.user {
+  width: 1200px;
+  min-height: 300px;
+  margin: 50px auto;
+  display: flex;
+  justify-content: space-between;
+  &__create {
+    width: 49%;
+    min-height: 300px;
+    &__name {
+      font-size: 20px;
+      font-weight: bolder;
+      margin: 15px 0;
+    }
+    &__input {
+      width: 100%;
+      height: 40px;
+      border: 1px solid $borderCol;
+      outline: 1px solid $borderCol;
+      border-radius: 5px;
+      padding: 10px;
+      font-size: 18px;
+      &:focus {
+        border: 2px solid $blueCol;
+      }
+    }
+    &__btnAdd,
+    &__btnSave {
+      width: 100%;
+      height: 40px;
+      border: 1px solid $greenCol;
+      background-color: $greenCol;
+      border-radius: 5px;
+      color: $whiteCol;
+      margin: 25px 0;
+      font-size: 20px;
+      &:focus {
+        box-shadow: inset 0 0 8px 0 $greenDark;
+      }
+    }
+    &__btnSave {
+      border: 1px solid $blueCol;
+      background-color: $blueCol;
+      &:focus {
+        box-shadow: inset 0 0 8px 0 $blueDark;
+      }
+    }
+  }
+  &__list {
+    width: 49%;
+    min-height: 300px;
+    &__editBtn,
+    &__deleteBtn {
+      padding: 10px 15px;
+      border-radius: 5px;
+      font-size: 15px;
+      background-color: $orangeCol;
+      border: 1px solid $orangeCol;
+      &:focus {
+        box-shadow: inset 0 0 8px 0 $orangeDark;
+      }
+    }
+    &__deleteBtn {
+      background-color: $redCol;
+      border: 1px solid $redCol;
+      color: $whiteCol;
+    }
+  }
+}
+th > p {
+  padding: 15px 30px;
+}
+table,
+tr,
+th {
+  margin: 35px 0 0 30px;
+  border-top: 1px solid $borderCol;
+  border-bottom: 1px solid $borderCol;
+  border-collapse: collapse;
+  padding: 10px 0;
+}
+.error {
+  border: 2px solid $redCol;
+  outline: none;
+}

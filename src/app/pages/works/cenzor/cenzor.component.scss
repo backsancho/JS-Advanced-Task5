@@ -1,0 +1,71 @@
+@import '../../../shared/style/variable';
+@import '../../../shared/style/base';
+
+  span {
+    min-width: 60px;
+    font-size: 20px;
+    font-weight: 800;
+  }
+  .cenzor{
+    &__main {
+      width: 600px;
+      min-height: 200px;
+      margin: 50px auto;
+    }
+ 
+    &__bad {
+      color:$redCol;
+    }
+    &__input,
+    &__textarea {
+      width: 400px;
+      height: 40px;
+      border-radius: 5px;
+      border: 1px solid $borderCol;
+      margin: 15px 0;
+      padding: 10px;
+      &:focus {
+        outline: 1px solid $blueCol;
+        border: 1px solid $blueCol;
+      }
+    }
+    &__btn {
+      width: 95px;
+      height: 40px;
+      border-radius: 5px;
+      margin-left: 5px;
+    }
+    &__add {
+      background-color: $orangeDark;
+      border: 1px solid $orangeCol;
+      &:focus {
+        background-color: $orangeDark;
+        box-shadow: 1px 1px 7px 0 $orangeCol;
+      }
+    }
+    &__reset {
+      color: $whiteCol;
+      background-color: $redCol;
+      border: 1px solid $redDark;
+      &:focus {
+        background-color: $redDark;
+        box-shadow: 1px 1px 7px 0 $redCol;
+      }
+    }
+    &__textarea {
+      width: 600px;
+      height: 150px;
+    }
+    &__cenzor {
+      width: 100%;
+      margin: 5px 0;
+      color: $whiteCol;
+      background-color: $greenCol;
+      border: 1px solid $greenDark;
+      &:focus {
+        background-color: $greenCol;
+        box-shadow: 1px 1px 10px 3px $greenDark;
+        box-shadow:inset 6px 1px 12px 8px $greenDark;
+      }
+    }
+  }
